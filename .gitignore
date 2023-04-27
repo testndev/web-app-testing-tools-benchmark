@@ -5,6 +5,7 @@ package-lock.json
 # tests results/reports
 
 *test-report*
+**/*.mp4
 
 # Logs
 logs

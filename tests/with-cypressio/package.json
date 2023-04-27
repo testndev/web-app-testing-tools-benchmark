@@ -1,0 +1,24 @@
+{
+  "name": "testndev-web-app-testing-tools-benchmark-cypress",
+  "version": "0.1",
+  "description": "Benchmark of web-applications testing tools/libraries/frameworks: example with Cypress",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testndev/web-app-testing-tools-benchmark.git"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "bash run.sh"
+  },
+  "author": {
+    "email": "alhusaine@testndev.com",
+    "name": "Al Husaine NEMER"
+  },
+  "license": "GPL-3.0-or-later",
+  "private": false,
+  "devDependencies": {
+    "cypress": "^12.11.0"
+  }
+}
