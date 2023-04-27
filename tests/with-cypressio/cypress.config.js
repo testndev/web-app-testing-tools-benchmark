@@ -4,7 +4,8 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://the-internet.herokuapp.com/",
     specPattern: '**/*.cy.{js,jsx,ts,tsx}',
-    supportFile: false
+    supportFile: false,
+    video:false
   },
   reporter: "spec" ,
   reporterOptions: {
