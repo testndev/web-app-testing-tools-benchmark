@@ -10,13 +10,17 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm run test:cy && npm run test:pw",
+    "test": "npm run test:cy && npm run test:pw && npm run test:se && npm run test:nw",
     "test:pw": "cd tests/with-playwright && npm test",
     "test:cy": "cd tests/with-cypressio && npm test",
+    "test:se": "cd tests/with-selenium-jest && npm test",
+    "test:nw": "cd tests/with-nightwatch && npm test",
     
-    "init": "npm install && npm run init:cy && npm run init:pw",
+    "init": "npm install && npm run init:cy && npm run init:pw && npm run init:se && npm run init:nw",
     "init:pw": "cd tests/with-playwright && npm install",
-    "init:cy": "cd tests/with-cypressio && npm install"
+    "init:cy": "cd tests/with-cypressio && npm install",
+    "init:se": "cd tests/with-selenium-jest && npm install",
+    "init:nw": "cd tests/with-nightwatch && npm install"
   },
   "author": {
     "email": "alhusaine@testndev.com",

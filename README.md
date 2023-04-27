@@ -10,7 +10,11 @@ Planned to compare:
 
 All in their [Node.js](https://nodejs.org) versions first.
 
-Whenever possible, we will write the tests in TypeScript.
+## Constraints
+
+- all implemented tests use already installed Chrome browser
+- Browser is in headless mode (forced for Selenium, default mode for other)
+- Whenever possible, we will write the tests in TypeScript.
 
 ## What will be studied and compared?
 
@@ -43,6 +47,8 @@ Execute in your terminal this command: `npm test`
 
 - for Cypress: `npm test:cy`
 - for Playwright: `npm test:pw`
+- for Selenium+Jest: `npm test:se`
+- for Nightwatch: `npm test:nw`
 
 > to be completed!
 
