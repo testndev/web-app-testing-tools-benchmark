@@ -14,7 +14,7 @@
     "test:pw": "cd tests/with-playwright && npm test",
     "test:cy": "cd tests/with-cypressio && npm test",
     
-    "init": "npm run init:cy && npm run init:pw",
+    "init": "npm install && npm run init:cy && npm run init:pw",
     "init:pw": "cd tests/with-playwright && npm install",
     "init:cy": "cd tests/with-cypressio && npm install"
   },

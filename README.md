@@ -10,6 +10,8 @@ Planned to compare:
 
 All in their [Node.js](https://nodejs.org) versions first.
 
+Whenever possible, we will write the tests in TypeScript.
+
 ## What will be studied and compared?
 
 - Installation
@@ -25,6 +27,22 @@ All in their [Node.js](https://nodejs.org) versions first.
    1. Single simple test in its test file
    2. a tests' suite, with some simple tests
 2. ...
+
+## Install
+
+Execute in your terminal this command: `npm init`
+
+## Run tests
+
+### All at once
+
+Execute in your terminal this command: `npm test`
+
+### For a specific framework
+
+
+- for Cypress: `npm test:cy`
+- for Playwright: `npm test:pw`
 
 > to be completed!
 
