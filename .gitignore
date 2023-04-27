@@ -4,6 +4,7 @@ package-lock.json
 
 # tests results/reports
 
+chrono.csv
 *test-report*
 *tests_output*
 **/*.mp4
