@@ -1,7 +1,7 @@
 {
-  "name": "testndev-web-app-testing-tools-benchmark",
+  "name": "testndev-web-app-testing-tools-benchmark-playwright",
   "version": "0.1",
-  "description": "Benchmark of web-applications testing tools/libraries/frameworks",
+  "description": "Benchmark of web-applications testing tools/libraries/frameworks: example with Playwright",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/testndev/web-app-testing-tools-benchmark.git"
@@ -10,13 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm run test:cy && npm run test:pw",
-    "test:pw": "cd tests/with-playwright && npm test",
-    "test:cy": "cd tests/with-cypressio && npm test",
-    
-    "init": "npm run init:cy && npm run init:pw",
-    "init:pw": "cd tests/with-playwright && npm install",
-    "init:cy": "cd tests/with-cypressio && npm install"
+    "test": "bash run.sh"
   },
   "author": {
     "email": "alhusaine@testndev.com",
@@ -24,7 +18,8 @@
   },
   "license": "GPL-3.0-or-later",
   "private": false,
-  "devDependencies": { 
+  "devDependencies": {
+    "@playwright/test": "^1.33.0",
     "@types/node": "^18.16.1",
     "@typescript-eslint/eslint-plugin": "5.59.1",
     "@typescript-eslint/parser": "^5.59.1",
