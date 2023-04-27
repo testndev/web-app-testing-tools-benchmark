@@ -2,6 +2,10 @@ package-lock.json
 
 *_tmp_*
 
+# tests results/reports
+
+*test-report*
+
 # Logs
 logs
 *.log

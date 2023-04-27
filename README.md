@@ -21,6 +21,11 @@ All in their [Node.js](https://nodejs.org) versions first.
 
 ## List of tests scenarios
 
+1. Tests without interaction with (web) app
+   1. Single simple test in its test file
+   2. a tests' suite, with some simple tests
+2. ...
+
 > to be completed!
 
 ## Is this an article?
