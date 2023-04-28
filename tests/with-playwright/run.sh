@@ -1,10 +1,12 @@
 #!/bin/bash
-runner="Playwright.TestRunner"
-echo "##[$runner] ▶ start running all tests"
-start=$(date +%s%N)
+source ../../src/chrono.sh
+
+runnerName="Playwright.ts" 
+
+preRunLog $runnerName
+start=$(getChrono)
+
 npx playwright test --config playwright.config.ts
-end=$(date +%s%N)
-elapsed_time="$(($(($end-$start))/1000000))"
-elapsed_time_log_message="##[$runner] ◼ Elapsed time: $elapsed_time ms"
-echo $elapsed_time_log_message
-echo "\"$runner\";$elapsed_time;\"$(date --iso-8601=seconds)\"" >> ../chrono.csv
+
+end=$(getChrono)
+postRunLog $runnerName $start $end
