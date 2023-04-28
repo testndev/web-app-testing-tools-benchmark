@@ -6,7 +6,7 @@ runnerName="NightWatchjs.ts"
 preRunLog $runnerName
 start=$(getChrono)
 
-npx nightwatch --headless
+npx nightwatch --headless | tee -a $stdoutLogsPath
 
 end=$(getChrono)
 postRunLog $runnerName $start $end

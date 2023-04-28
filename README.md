@@ -30,7 +30,7 @@ All in their [Node.js](https://nodejs.org) versions first.
 1. Tests without interaction with (web) app
    1. Single simple test in its test file
    2. a tests' suite, with some simple tests
-2. ...
+2. Tests without interaction with (web) app
 
 ## Install
 
@@ -41,6 +41,12 @@ Execute in your terminal this command: `npm init`
 ### All at once
 
 Execute in your terminal this command: `npm test`
+
+Run the test set 5 times?
+
+```shell
+for ((n=0;n<5;n++)); do npm test; done
+```
 
 ### For a specific framework
 

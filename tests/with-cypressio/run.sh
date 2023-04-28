@@ -6,7 +6,7 @@ runnerName="Cypressio.ts"
 preRunLog $runnerName
 start=$(getChrono)
 
-npx cypress run
+npx cypress run | tee -a $stdoutLogsPath
 
 end=$(getChrono)
 postRunLog $runnerName $start $end

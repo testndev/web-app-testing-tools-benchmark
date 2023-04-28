@@ -6,7 +6,7 @@ runnerName="Selenium_Jest.ts"
 preRunLog $runnerName
 start=$(getChrono)
 
-npx jest
+npx jest | tee -a $stdoutLogsPath
 
 end=$(getChrono)
 postRunLog $runnerName $start $end
