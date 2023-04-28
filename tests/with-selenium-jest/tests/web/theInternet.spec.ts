@@ -13,7 +13,7 @@ describe('The-Internet', () => {
         await driver.quit();
     });
 
-    test('has a correct title', async () => {
+    test('has a correct title [T_10]', async () => {
         await driver.get('https://the-internet.herokuapp.com/');
         await driver.wait(until.elementLocated(By.css('h1')), 5000);
         const result = await driver.findElement(By.css('h1')).getText();
