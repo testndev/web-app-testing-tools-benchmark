@@ -12,7 +12,7 @@ All in their [Node.js](https://nodejs.org) versions first.
 
 ## Constraints
 
-- all implemented tests use already installed Chrome browser
+- all implemented tests will use the **Chrome browser already installed** on the machine (except for Cypress.io, of course)
 - Browser is in headless mode (forced for Selenium, default mode for other)
 - Whenever possible, we will write the tests in TypeScript.
 
@@ -27,10 +27,7 @@ All in their [Node.js](https://nodejs.org) versions first.
 
 ## List of tests scenarios
 
-1. Tests without interaction with (web) app
-   1. Single simple test in its test file
-   2. a tests' suite, with some simple tests
-2. Tests without interaction with (web) app
+See this page: ["List of tests scenarios"](tests/README.md)
 
 ## Install
 

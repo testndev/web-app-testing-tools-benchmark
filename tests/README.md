@@ -19,3 +19,4 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
 | id     | title                 | comment                             | file                                                                 |
 | ------ | --------------------- | ----------------------------------- | -------------------------------------------------------------------- |
 | `T_10` | *has a correct title* | simple landing-to-page (no actions) | [theInternet.spec.ts](with-nightwatch/tests/web/theInternet.spec.ts) |
+| `T_11` | *user is able to login* | use login form | ... |
