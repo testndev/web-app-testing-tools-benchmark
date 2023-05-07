@@ -1,6 +1,6 @@
 {
   "name": "testndev-web-app-testing-tools-benchmark-playwright",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Benchmark of web-applications testing tools/libraries/frameworks: example with Playwright",
   "repository": {
     "type": "git",
@@ -12,6 +12,11 @@
   "scripts": {
     "test": "bash run.sh"
   },
+  "keywords": [
+    "testing",
+    "benchmark",
+    "playwright"
+  ],
   "author": {
     "email": "alhusaine@testndev.com",
     "name": "Al Husaine NEMER"
@@ -27,6 +32,5 @@
     "prettier": "^2.8.8",
     "rimraf": "^3.0.2",
     "typescript": "^5.0.4"
-  },
-  "dependencies": {   }
+  }
 }

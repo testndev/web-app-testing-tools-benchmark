@@ -1,6 +1,6 @@
 {
   "name": "testndev-web-app-testing-tools-benchmark",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Benchmark of web-applications testing tools/libraries/frameworks",
   "repository": {
     "type": "git",
@@ -22,6 +22,10 @@
     "init:se": "cd tests/with-selenium-jest && npm install",
     "init:nw": "cd tests/with-nightwatch && npm install"
   },
+  "keywords": [
+    "testing",
+    "benchmark"
+  ],
   "author": {
     "email": "alhusaine@testndev.com",
     "name": "Al Husaine NEMER"
@@ -36,6 +40,5 @@
     "prettier": "^2.8.8",
     "rimraf": "^3.0.2",
     "typescript": "^5.0.4"
-  },
-  "dependencies": {   }
+  }
 }

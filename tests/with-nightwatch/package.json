@@ -1,6 +1,6 @@
 {
   "name": "testndev-web-app-testing-tools-benchmark-nightwatch",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Benchmark of web-applications testing tools/libraries/frameworks: example with Nightwatch",
   "repository": {
     "type": "git",
@@ -12,12 +12,17 @@
   "scripts": {
     "test": "bash run.sh"
   },
-  "keywords": [],
+  "keywords": [
+    "testing",
+    "benchmark",
+    "nightwatch"
+  ],
   "author": {
     "email": "alhusaine@testndev.com",
     "name": "Al Husaine NEMER"
   },
   "license": "GPL-3.0-or-later",
+  "private": false,
   "devDependencies": {
     "@types/nightwatch": "^2.3.23",
     "chromedriver": "^112.0.0",
