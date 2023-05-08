@@ -76,5 +76,7 @@ Like:
 
 Notes: 
 
-- [^1]: except for Cypress.io, of course
-- [^2]: forced for Selenium, default mode for other
+[^1]: forced via `--browser` argument CLI command for Cypress.io, in configuration for Nightwatch and Playwright, and inside tests code for Selenium
+
+[^2]: forced for Selenium, default mode for other
+
