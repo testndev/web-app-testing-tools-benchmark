@@ -13,10 +13,10 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
         <td>Nightwatch</td>
         <td>Cypress.io</td>
         <td>Playwright</td>
-        <td>Selenium (+Jest)</td>
+        <td>Selenium + Jest</td>
     </tr>
     <tr>
-        <td><code>T_0</code></td>
+        <td><code>T_00</code></td>
         <td><em>shorter example ever</em></td>
         <td>shorter test file with only 1 test</td>
         <td><a href="./with-nightwatch/tests/simple/simpleSingleTest.spec.ts" >✔️</a></td>

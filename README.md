@@ -12,9 +12,9 @@ All in their [Node.js](https://nodejs.org) versions first.
 
 ## Constraints
 
-- all implemented tests will use the **Chrome browser already installed** on the machine (except for Cypress.io, of course)
-- Browser is in headless mode (forced for Selenium, default mode for other)
-- Whenever possible, we will write the tests in TypeScript.
+- all implemented tests will use the **Chrome browser already installed** [^1] on the machine
+- Browser is in **headless** mode [^2]
+- all tests written in **TypeScript**.
 
 ## What will be studied and compared?
 
@@ -70,3 +70,11 @@ Like:
 - ["Choix du logiciel et avis - Framework : Selenium vs Playwright vs Cypress"](https://blog.mrsuricate.com/choix-logiciel-avis-framework-selenium-playwright-cypress)
  
   > (in french, 13/03/2023, by [*Mr Suricate*](https://www.mrsuricate.com/))
+
+
+---
+
+Notes: 
+
+- [^1]: except for Cypress.io, of course
+- [^2]: forced for Selenium, default mode for other
