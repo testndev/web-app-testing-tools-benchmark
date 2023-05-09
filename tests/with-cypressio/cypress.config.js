@@ -5,7 +5,8 @@ module.exports = defineConfig({
     baseUrl: "https://the-internet.herokuapp.com/",
     specPattern: '**/*.spec.{js,jsx,ts,tsx}',
     supportFile: false,
-    video:false
+    video:false,
+    chromeWebSecurity: false
   },
   reporter: "spec" ,
   reporterOptions: {
