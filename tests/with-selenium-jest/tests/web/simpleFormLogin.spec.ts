@@ -14,18 +14,14 @@ describe('The-Internet', () => {
     });
 
     test('should accept user with valid credentials [T_10]', async () => {
-        await driver.findElement(By.linkText('Form Authentication')).click();
-        await driver.wait(until.elementLocated(By.name('username')));
         await driver.findElement(By.name('username')).sendKeys('tomsmith');
-        await driver.findElement(By.name('password')).sendKeys('SuperSecretPassword');
+        await driver.findElement(By.name('password')).sendKeys('SuperSecretPassword!');
         await driver.findElement(By.css('button[type="submit"]')).click();
         const message = await driver.findElement(By.id('flash')).getText();
         expect(message).toContain('You logged into a secure area!');
     });
 
     test('should display error message for incorrect username [T_11]', async () => {
-        await driver.findElement(By.linkText('Form Authentication')).click();
-        await driver.wait(until.elementLocated(By.name('username')));
         await driver.findElement(By.name('username')).sendKeys('john');
         await driver.findElement(By.name('password')).sendKeys('pa55w0rd');
         await driver.findElement(By.css('button[type="submit"]')).click();
@@ -35,8 +31,6 @@ describe('The-Internet', () => {
 
 
     test('should display error message for incorrect password [T_12]', async () => {
-        await driver.findElement(By.linkText('Form Authentication')).click();
-        await driver.wait(until.elementLocated(By.name('username')));
         await driver.findElement(By.name('username')).sendKeys('tomsmith');
         await driver.findElement(By.name('password')).sendKeys('pa55wincorrect_password0rd');
         await driver.findElement(By.css('button[type="submit"]')).click();
