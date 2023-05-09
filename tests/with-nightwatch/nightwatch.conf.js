@@ -40,7 +40,7 @@ module.exports = {
   test_settings: {
     default: {
       disable_error_log: false,
-      launch_url: "http://localhost",
+      launch_url: "https://the-internet.herokuapp.com",
 
       screenshots: {
         enabled: false,

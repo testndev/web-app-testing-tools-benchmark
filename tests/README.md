@@ -44,20 +44,29 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
     </tr>
     <tr>
         <td><code>T_10</code></td>
-        <td><em>has a correct title</em></td>
-        <td>simple landing-to-page (no actions)</td>
-        <td><a href="./with-nightwatch/tests/web/theInternet.spec.ts" >✔️</a></td>
-        <td><a href="./with-cypressio/tests/web/theInternet.spec.ts" >✔️</a></td>
-        <td><a href="./with-playwright/tests/web/theInternet.spec.ts" >✔️</a></td>
-        <td><a href="./with-selenium-jest/tests/web/theInternet.spec.ts" >✔️</a></td>
+        <td><em>should accept user with valid credentials</em></td>
+        <td>use login form</td>
+        <td><a href="./with-nightwatch/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+        <td><a href="./with-cypressio/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+        <td><a href="./with-playwright/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+        <td><a href="./with-selenium-jest/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
     </tr>
     <tr>
         <td><code>T_11</code></td>
-        <td><em>an error message appears if login with invalid username</em></td>
+        <td><em>should display error message for incorrect username</em></td>
         <td>use login form</td>
-        <td><a href="./with-nightwatch/tests/web/theInternet.spec.ts" >✔️</a></td>
-        <td><a href="./with-cypressio/tests/web/theInternet.spec.ts" >✔️</a></td>
-        <td><a href="./with-playwright/tests/web/theInternet.spec.ts" >✔️</a></td>
-        <td><a href="./with-selenium-jest/tests/web/theInternet.spec.ts" >✔️</a></td>
+        <td><a href="./with-nightwatch/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+        <td><a href="./with-cypressio/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+        <td><a href="./with-playwright/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+        <td><a href="./with-selenium-jest/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+    </tr>
+    <tr>
+        <td><code>T_12</code></td>
+        <td><em>should display error message for incorrect password</em></td>
+        <td>use login form</td>
+        <td><a href="./with-nightwatch/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+        <td><a href="./with-cypressio/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+        <td><a href="./with-playwright/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
+        <td><a href="./with-selenium-jest/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
     </tr>
 </table>
