@@ -73,7 +73,7 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
         <td><code>T_20</code></td>
         <td><em>should have an initial text</em></td>
         <td>inside an iFrame</td>
-        <td><a href="./with-nightwatch/tests/web/textEditor.spec.ts" >⚪</a></td>
+        <td><a href="./with-nightwatch/tests/web/textEditor.spec.ts" >✔️</a></td>
         <td><a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️</a></td>
         <td><a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a></td>
         <td><a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >⚪</a></td>
@@ -82,7 +82,7 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
         <td><code>T_21</code></td>
         <td><em>should be able to replace initial text by new one</em></td>
         <td>inside an iFrame, and <code>CTRL+A</code> combo</td>
-        <td><a href="./with-nightwatch/tests/web/textEditor.spec.ts" >⚪</a></td>
+        <td><a href="./with-nightwatch/tests/web/textEditor.spec.ts" >✔️</a></td>
         <td><a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️</a></td>
         <td><a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a></td>
         <td><a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >⚪</a></td>
@@ -91,7 +91,7 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
         <td><code>T_22</code></td>
         <td><em>'should be able to delete last paragraph with keyboard shortcuts</em></td>
         <td>inside an iFrame, and <code>CTRL+SHIFT+UP</code> combo</td>
-        <td><a href="./with-nightwatch/tests/web/textEditor.spec.ts" >⚪</a></td>
+        <td><a href="./with-nightwatch/tests/web/textEditor.spec.ts" >✔️</a></td>
         <td><a href="./with-cypressio/tests/web/textEditor.spec.ts" >❌</a></td>
         <td><a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a></td>
         <td><a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >⚪</a></td>

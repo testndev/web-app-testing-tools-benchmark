@@ -1,11 +1,13 @@
 const iframeLocator = 'iframe[title="Rich Text Area"]';
 
-const littlePause = 2000;
 const initialText = 'Your content goes here.';
 const textFirstParagraph = 'Hello! this should be the title of our text.';
 const textMiddleParagraph = 'This is a paragraphin the middle';
 const textLastParagraph = 'This is the last paragraph. Good bye!';
 const newText = [textFirstParagraph, textMiddleParagraph, textLastParagraph].join('\n');
+
+const littlePause = 2000;
+
 describe('The-Internet WYSIWYG editor', () => {
 
     beforeEach(() => {
