@@ -72,25 +72,29 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
                 <li>+ <code>CTRL+SHIFT+UP</code> combo</li>
             </ol>
         </td>
-        <td><a href="./with-nightwatch/tests/web/textEditor.spec.ts" >✔️</a></td>
-        <td><a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️</a></td>
-        <td><a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a></td>
-        <td><a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >⚪</a></td>
+        <td rowspan=3>
+           all <a href="./with-nightwatch/tests/web/textEditor.spec.ts" >✔️</a>
+        </td>
+        <td rowspan=3>
+            <ol>
+                <li><a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️</a></li>
+                <li><a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️</a></li>
+                <li><a href="./with-cypressio/tests/web/textEditor.spec.ts" >❌</a></li>
+            </ol>
+        </td>
+        <td rowspan=3>
+            all <a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a>
+        </td>
+        <td rowspan=3>
+            <a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >⚪</a>
+        </td>
     </tr>
     <tr>
         <td><code>T_21</code></td>
         <td><em>should be able to replace initial text by new one</em></td>
-        <td><a href="./with-nightwatch/tests/web/textEditor.spec.ts" >✔️</a></td>
-        <td><a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️</a></td>
-        <td><a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a></td>
-        <td><a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >⚪</a></td>
     </tr>
     <tr>
         <td><code>T_22</code></td>
-        <td><em>'should be able to delete last paragraph with keyboard shortcuts</em></td>
-        <td><a href="./with-nightwatch/tests/web/textEditor.spec.ts" >✔️</a></td>
-        <td><a href="./with-cypressio/tests/web/textEditor.spec.ts" >❌</a></td>
-        <td><a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a></td>
-        <td><a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >⚪</a></td>
+        <td><em>should be able to delete last paragraph with keyboard shortcuts</em></td>
     </tr>
 </table>
