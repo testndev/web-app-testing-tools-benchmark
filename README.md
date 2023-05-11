@@ -1,6 +1,6 @@
 # Benchmark of web-applications testing tools
 
-![](doc/header-image.svg)
+![](doc/header-image.png)
 
 Here we compare [Cypress.io](https://cypress.io/) *vs* [Nightwatch.js](https://nightwatchjs.org) *vs* [Playwright](https://playwright.dev/) *vs* [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/), all in their [Node.js](https://nodejs.org) versions first.
 
