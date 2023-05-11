@@ -1,16 +1,10 @@
 # Benchmark of web-applications testing tools
 
-Here you will find some concrete examples of automated tests implemented in differents tools.
-
 ![](doc/header-image.svg)
 
-Planned to compare:
-- [Playwright](https://playwright.dev/)
-- [Cypress.io](https://cypress.io/)
-- [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/)
-- [Nightwatch.js](https://nightwatchjs.org)
+Here we compare [Cypress.io](https://cypress.io/) *vs* [Nightwatch.js](https://nightwatchjs.org) *vs* [Playwright](https://playwright.dev/) *vs* [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/), all in their [Node.js](https://nodejs.org) versions first.
 
-All in their [Node.js](https://nodejs.org) versions first.
+We present in this repo some concrete examples of automated tests implemented in differents tools.
 
 ## Constraints
 
