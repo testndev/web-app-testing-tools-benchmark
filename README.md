@@ -31,7 +31,7 @@ Execute in your terminal this command: `npm init`
 
 ## Run tests
 
-### All at once
+### All at once, with all frameworks
 
 Execute in your terminal this command: `npm test`
 
@@ -41,17 +41,21 @@ Run the test set 5 times?
 for ((n=0;n<5;n++)); do npm test; done
 ```
 
-### For a specific framework
+### Run all tests with a specific framework
 
 
-- for Cypress: `npm test:cy`
-- for Nightwatch: `npm test:nw`
-- for Playwright: `npm test:pw`
-- for Selenium+Jest: `npm test:se`
+| tool | command | detailed script |
+|--|--|--|
+|Cypress       |  `npm test:cy` | [/tests/with-cypressio/run.sh](./tests/with-cypressio/run.sh) |
+|Nightwatch    |  `npm test:nw` | [/tests/with-nightwatch/run.sh](./tests/with-nightwatch/run.sh) |
+|Playwright    |  `npm test:pw` | [/tests/with-playwright/run.sh](./tests/with-cypressplaywrightio/run.sh) |
+|Selenium+Jest |  `npm test:se` | [/tests/with-selenium-jest/run.sh](./tests/with-selenium-jest/run.sh) |
 
 ## Is this an article?
 
 No.
+
+But code present in this repository will be used in a article.
 
 There is many articles that compare those frameworks, presenting their features, trade-offs, etc.
 
