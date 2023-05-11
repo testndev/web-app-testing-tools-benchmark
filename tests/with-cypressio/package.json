@@ -10,7 +10,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "bash run.sh"
+    "test": "bash run.sh",
+    "lint": "eslint ./tests"
   },
   "keywords": [
     "testing",
@@ -24,6 +25,7 @@
   "license": "GPL-3.0-or-later",
   "private": false,
   "devDependencies": {
-    "cypress": "^12.11.0"
+    "cypress": "^12.11.0",
+    "eslint-plugin-cypress": "^2.13.3"
   }
 }
