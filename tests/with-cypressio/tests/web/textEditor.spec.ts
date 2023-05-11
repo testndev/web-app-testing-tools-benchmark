@@ -1,3 +1,4 @@
+/* eslint-disable cypress/no-unnecessary-waiting */
 const iframeLocator = 'iframe[title="Rich Text Area"]';
 const richTextAreaLocator = '#tinymce'; // vaild inside the iframe
 const initialText = 'Your content goes here.';
@@ -26,7 +27,7 @@ describe('The-Internet WYSIWYG editor', () => {
     it('should have an initial text [T_20]', () => {
         cy.get(iframeLocator)
             .then(iframe => cy.wrap(iframe.contents().find(richTextAreaLocator)))
-            .within((_) => {
+            .within(() => {
                 cy.get('p').should('include.text', initialText);
             });
     });
@@ -34,43 +35,43 @@ describe('The-Internet WYSIWYG editor', () => {
     it('should be able to replace initial text by new one [T_21]', () => {
         cy.get(iframeLocator)
             .then(iframe => {
-                cy.wrap(iframe.contents().find(richTextAreaLocator))
-                    .wait(littlePause)
-                    .type('{ctrl}A')
-                    .wait(littlePause)
-                    .type(newText)
-                    .within((_) => {
-                        cy.contains(textFirstParagraph).should('be.visible')
-                        cy.contains(textLastParagraph).should('be.visible')
-                        cy.contains(initialText).should('not.exist')
-                    });
+                cy.wrap(iframe.contents().find(richTextAreaLocator)).as('richTextArea');
+                cy.wait(littlePause);
+                cy.get('@richTextArea').type('{ctrl}A')
+                cy.wait(littlePause);
+                cy.get('@richTextArea').type(newText);
+                cy.get('@richTextArea').within(() => {
+                    cy.contains(textFirstParagraph).should('be.visible');
+                    cy.contains(textLastParagraph).should('be.visible');
+                    cy.contains(initialText).should('not.exist');
+                });
             });
     });
 
     it('should be able to delete last paragraph with keyboard shortcuts [T_22]', () => {
         cy.get(iframeLocator)
             .then(iframe => {
-                cy.wrap(iframe.contents().find(richTextAreaLocator))
-                    .wait(littlePause)
-                    .type('{ctrl}A')
-                    .wait(littlePause)
-                    .type(newText)
-                    .within((_) => {
-                        cy.contains(textFirstParagraph).should('be.visible')
-                        cy.contains(textLastParagraph).should('be.visible')
-                        cy.contains(initialText).should('not.exist')
-                    })
-                    .type('{end}')
-                    .wait(littlePause)
-                    .type('{ctrl+shift+uparrow}')
-                    .wait(littlePause)
-                    .type('{del}')
-                    .wait(littlePause)
-                    .within((_) => {
-                        cy.contains(textFirstParagraph).should('be.visible')
-                        //FIXME: last paragraph still exists
-                        cy.contains(textLastParagraph).should('not.exist')
-                    })
+                cy.wrap(iframe.contents().find(richTextAreaLocator)).as('richTextArea');
+                cy.wait(littlePause);
+                cy.get('@richTextArea').type('{ctrl}A');
+                cy.wait(littlePause);
+                cy.get('@richTextArea').type(newText);
+                cy.get('@richTextArea').within(() => {
+                    cy.contains(textFirstParagraph).should('be.visible');
+                    cy.contains(textLastParagraph).should('be.visible');
+                    cy.contains(initialText).should('not.exist');
+                });
+                cy.get('@richTextArea').type('{end}');
+                cy.wait(littlePause);
+                cy.get('@richTextArea').type('{ctrl+shift+uparrow}');
+                cy.wait(littlePause);
+                cy.get('@richTextArea').type('{del}');
+                cy.wait(littlePause);
+                cy.get('@richTextArea').within(() => {
+                    cy.contains(textFirstParagraph).should('be.visible')
+                    //FIXME: last paragraph still exists
+                    cy.contains(textLastParagraph).should('not.exist')
+                })
             });
     });
 
