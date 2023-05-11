@@ -28,7 +28,7 @@ test.describe('The-Internet WYSIWYG editor', async () => {
         await tinymce.fill(newText);
         await expect(tinymce.getByText(textFirstParagraph)).toBeVisible();
         await expect(tinymce.getByText(textLastParagraph)).toBeVisible();
-        await expect(tinymce.getByText(initialText)).not.toBeVisible();
+        await expect(tinymce.getByText(initialText)).toBeHidden();
     });
 
     test('should be able to delete last paragraph with keyboard shortcuts [T_22]', async ({ page }) => {
@@ -38,11 +38,11 @@ test.describe('The-Internet WYSIWYG editor', async () => {
         await tinymce.press('Control+a');
         await tinymce.fill(newText);
         await expect(tinymce.getByText(textLastParagraph)).toBeVisible();
-        await expect(richTextAreaFrame.getByText(initialText)).not.toBeVisible();
+        await expect(richTextAreaFrame.getByText(initialText)).toBeHidden();
         await tinymce.press('End');
         await tinymce.press('Control+Shift+ArrowUp');
         await tinymce.press('Delete');
         await expect(tinymce.getByText(textFirstParagraph)).toBeVisible();
-        await expect(tinymce.getByText(textLastParagraph)).not.toBeVisible();
+        await expect(tinymce.getByText(textLastParagraph)).toBeHidden();
     });
 });
