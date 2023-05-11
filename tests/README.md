@@ -1,9 +1,6 @@
 ## List of tests scenarios
 
-### simple, without web app
-
-
-We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-internet.herokuapp.com) as our test web application.
+We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-internet.herokuapp.com) as target web application.
 
 <table>
     <tr>
@@ -15,10 +12,10 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
         <th>id</th>
         <th>title</th>
         <th>comment</th>
-        <th>Nightwatch</th>
-        <th>Cypress.io</th>
-        <th>Playwright</th>
-        <th>Selenium + Jest</th>
+        <th>Nw</th>
+        <th>Cy</th>
+        <th>Pw</th>
+        <th>Se</th>
     </tr>
     <tr>
         <td><code>T_00</code></td>
@@ -76,11 +73,7 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
            all <a href="./with-nightwatch/tests/web/textEditor.spec.ts" >✔️</a>
         </td>
         <td rowspan=3>
-            <ol>
-                <li><a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️</a></li>
-                <li><a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️</a></li>
-                <li><a href="./with-cypressio/tests/web/textEditor.spec.ts" >❌</a></li>
-            </ol>
+            <a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️✔️❌</a> 
         </td>
         <td rowspan=3>
             all <a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a>
