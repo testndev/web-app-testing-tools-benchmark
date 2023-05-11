@@ -79,7 +79,7 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
             all <a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a>
         </td>
         <td rowspan=3>
-            <a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >✔️</a>
+            all <a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >✔️</a>
         </td>
     </tr>
     <tr>

@@ -1,6 +1,8 @@
-# Benchmark of web-applications testing tools/libraries/frameworks
+# Benchmark of web-applications testing tools
 
 Here you will find some concrete examples of automated tests implemented in differents tools.
+
+![](doc/header-image.svg)
 
 Planned to compare:
 - [Playwright](https://playwright.dev/)
