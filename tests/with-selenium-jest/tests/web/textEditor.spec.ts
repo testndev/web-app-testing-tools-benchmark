@@ -23,8 +23,10 @@ describe('The-Internet WYSIWYG editor', () => {
 
     beforeEach(async () => {
         await driver.get('https://the-internet.herokuapp.com/tinymce');
-        const title = await (await driver.findElement(By.css('h3'))).getText();
-        await expect(title).toContain('An iFrame containing the TinyMCE WYSIWYG Editor');
+        await driver.wait(until.elementTextContains(
+            driver.findElement(By.css('h3')),
+            'An iFrame containing the TinyMCE WYSIWYG Editor')
+        );
         await driver.wait(until.elementIsVisible(driver.findElement(By.css(iframeLocator))));
     });
 
