@@ -10,7 +10,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "bash run.sh"
+    "test": "bash run.sh",
+    "lint": "eslint ./tests"
   },
   "keywords": [
     "testing",
