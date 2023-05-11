@@ -2,7 +2,7 @@
 
 ![](doc/header-image.png)
 
-Here we compare [![](doc/cy-icon.png) Cypress.io](https://cypress.io/) *vs* [Nightwatch.js](https://nightwatchjs.org) *vs* [Playwright](https://playwright.dev/) *vs* [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/), all in their [Node.js](https://nodejs.org) versions first.
+Here we compare [Cypress.io](https://cypress.io/) *vs* [Nightwatch.js](https://nightwatchjs.org) *vs* [Playwright](https://playwright.dev/) *vs* [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/), all in their [Node.js](https://nodejs.org) versions.
 
 We present in this repo some concrete examples of automated tests implemented in differents tools.
 
@@ -45,11 +45,9 @@ for ((n=0;n<5;n++)); do npm test; done
 
 
 - for Cypress: `npm test:cy`
+- for Nightwatch: `npm test:nw`
 - for Playwright: `npm test:pw`
 - for Selenium+Jest: `npm test:se`
-- for Nightwatch: `npm test:nw`
-
-> to be completed!
 
 ## Is this an article?
 
@@ -58,9 +56,8 @@ No.
 There is many articles that compare those frameworks, presenting their features, trade-offs, etc.
 
 Like: 
-- ["Which web testing tool should i use?
-"](https://automationpanda.com/2023/04/24/which-web-testing-tool-should-i-use)
- 
+- ["Which web testing tool should i use?"](https://automationpanda.com/2023/04/24/which-web-testing-tool-should-i-use)
+
   > (in english, 24/04/2023, by Andrew Knight aka [@automationpanda](https://twitter.com/automationpanda))
 
 - ["Choix du logiciel et avis - Framework : Selenium vs Playwright vs Cypress"](https://blog.mrsuricate.com/choix-logiciel-avis-framework-selenium-playwright-cypress)
