@@ -12,10 +12,10 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
         <th>id</th>
         <th>title</th>
         <th>comment</th>
-        <th>Nw</th>
-        <th>Cy</th>
-        <th>Pw</th>
-        <th>Se</th>
+        <th><img src="../doc/nw-icon.png" alt="Nightwatch logo" title="implementation with Nightwatch" /></th>
+        <th><img src="../doc/cy-icon.png" alt="Cypress logo" title="implementation with Cypress" /></th>
+        <th><img src="../doc/pw-icon.png" alt="Playwright logo" title="implementation with Playwright" /></th>
+        <th><img src="../doc/se-js-icon.png" alt="Selenium + Jest logos" title="implementation with Selenium + Jest" /></th>
     </tr>
     <tr>
         <td><code>T_00</code></td>
