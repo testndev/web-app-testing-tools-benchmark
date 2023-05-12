@@ -21,7 +21,9 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
     - "**should have an initial text `[T_20]`**" test
     - "**should be able to replace initial text by new one `[T_21]`**" test
     - "**should be able to delete last paragraph with keyboard shortcuts `[T_22]`**" test
-
+- in `tests\web\navigateOnManyPages.spec.ts` file:
+  - inside "_**The-Internet, navigate to pages `[S_3]`**_" tests suite, 38 tests with title:
+    - "**should navigate to "`${linkUrl}`" page by clicking on link [`T_${testId}`]**"
 
 ### the "**shortest possible example `[T_00]`**" test
 
@@ -75,6 +77,14 @@ Interesting notes:
   - `CTRL+SHIFT+UP` to extend selection to the beginning of current paragraph,
   - `DELETE` to delete text
 
+### the "_**The-Internet, navigate to pages `[S_3]`**_" tests suite
+
+Each of tests of this suite begins at homepage "**the-internet**" page: https://the-internet.herokuapp.com.
+
+According to [dataset (`listOfLinks.ts`)](./listOfLinks.ts), user clicks on a link, and checks that title of new page is correct. 
+
+
+
 
 ## Implemented tests
 
@@ -90,7 +100,7 @@ Interesting notes:
 | `T_20`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
 | `T_21`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
 | `T_22`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [🚨](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
-
+| `T_3xx` | [⚪](./with-nightwatch/tests/web/navigateOnManyPages.spec.ts) | [⚪](./with-cypressio/tests/web/navigateOnManyPages.spec.ts) | [✔️](./with-playwright/tests/web/navigateOnManyPages.spec.ts) | [⚪](./with-selenium-jest/tests/web/navigateOnManyPages.spec.ts) |
 #### *legend:*
 
 |                                 |                                     |
@@ -99,5 +109,6 @@ Interesting notes:
 | ![Cy](../doc/cy-icon.png)       | implementation with Cypress         |
 | ![Pw](../doc/pw-icon.png)       | implementation with Playwright      |
 | ![Se+Je](../doc/se-js-icon.png) | implementation with Selenium + Jest |
+| ⚪                               | not yet implemented                 |
 | ✔️                               | implemented, and pass               |
 | 🚨                               | implemented, but fails              |
