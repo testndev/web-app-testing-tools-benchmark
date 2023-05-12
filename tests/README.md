@@ -48,17 +48,31 @@ Some tests in this suite play with combinations and sequences of keyboard stroke
 - `DELETE` to delete text
 
 
+## Implemented tests
 
     
-| id     | title                                                             | ![implementation with Nightwatch](../doc/nw-icon.png) | ![implementation with Cypress](../doc/cy-icon.png) | ![implementation with Playwright](../doc/pw-icon.png) | ![implementation with Selenium + Jest](../doc/se-js-icon.png)                         |
-| ------ | ----------------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- | ------------------------------------ | ------------------------------------ |
-| `T_00` | _shortest possible example_                                            | [✔️](simple/simpleSingleTest.spec.ts)                  | [✔️](simple/simpleSingleTest.spec.ts)               | [✔️](simple/simpleSingleTest.spec.ts) | [✔️](simple/simpleSingleTest.spec.ts) |
-| `T_01` | _Simple addition_                                                 | [✔️](simple/simpleTestSuite.spec.ts)                   | [✔️](simple/simpleTestSuite.spec.ts)                | [✔️](simple/simpleTestSuite.spec.ts)  | [✔️](simple/simpleTestSuite.spec.ts)  |
-| `T_02` | _Simple multiplication_                                           | [✔️](simple/simpleTestSuite.spec.ts)                   | [✔️](simple/simpleTestSuite.spec.ts)                | [✔️](simple/simpleTestSuite.spec.ts)  | [✔️](simple/simpleTestSuite.spec.ts)  |
-| `T_10` | _should accept user with valid credentials_                       | [✔️](web/simpleFormLogin.spec.ts)                      | [✔️](web/simpleFormLogin.spec.ts)                   | [✔️](web/simpleFormLogin.spec.ts)     | [✔️](web/simpleFormLogin.spec.ts)     |
-| `T_11` | _should display error message for incorrect username_             | [✔️](web/simpleFormLogin.spec.ts)                      | [✔️](web/simpleFormLogin.spec.ts)                   | [✔️](web/simpleFormLogin.spec.ts)     | [✔️](web/simpleFormLogin.spec.ts)     |
-| `T_12` | _should display error message for incorrect password_             | [✔️](web/simpleFormLogin.spec.ts)                      | [✔️](web/simpleFormLogin.spec.ts)                   | [✔️](web/simpleFormLogin.spec.ts)     | [✔️](web/simpleFormLogin.spec.ts)     |
-| `T_20` | _should have an initial text_                                     | [✔️](web/textEditor.spec.ts)                           | [✔️](web/textEditor.spec.ts)                        | [✔️](web/textEditor.spec.ts)          | [✔️](web/textEditor.spec.ts)          |
-| `T_21` | _should be able to replace initial text by new one_               | [✔️](web/textEditor.spec.ts)                           | [✔️](web/textEditor.spec.ts)                        | [✔️](web/textEditor.spec.ts)          | [✔️](web/textEditor.spec.ts)          |
-| `T_22` | _should be able to delete last paragraph with keyboard shortcuts_ | [✔️](web/textEditor.spec.ts)                           | [❌](web/textEditor.spec.ts)                        | [✔️](web/textEditor.spec.ts)          | [✔️](web/textEditor.spec.ts)          |
+| id     | ![Nw](../doc/nw-icon.png)                                    | ![Cypress](../doc/cy-icon.png)                              | ![Pw](../doc/pw-icon.png)                                    | ![Se+Je](../doc/se-js-icon.png)                                 |
+| ------ | ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
+| `T_00` | [✔️](./with-nightwatch/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-cypressio/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-playwright/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-selenium-jest/tests/simple/simpleSingleTest.spec.ts) |
+| `T_01` | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |
+| `T_02` | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |
+| `T_10` | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
+| `T_11` | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
+| `T_12` | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
+| `T_20` | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
+| `T_21` | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
+| `T_22` | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [🚨](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
 
+<details>
+<summary>legend: </summary>
+*legend:*
+
+|                                 |                                     |
+| ------------------------------- | ----------------------------------- |
+| ![Nw](../doc/nw-icon.png)       | implementation with Nightwatch      |
+| ![Cy](../doc/cy-icon.png)       | implementation with Cypress         |
+| ![Pw](../doc/pw-icon.png)       | implementation with Playwright      |
+| ![Se+Je](../doc/se-js-icon.png) | implementation with Selenium + Jest |
+| ✔️                               | implemented, and pass               |
+| 🚨                               | implemented, but fails              |
+</details>
