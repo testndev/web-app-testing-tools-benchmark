@@ -44,12 +44,12 @@ for ((n=0;n<5;n++)); do npm test; done
 ### Run all tests with a specific framework
 
 
-| tool | command | detailed script |
-|--|--|--|
-|Cypress       |  `npm test:cy` | [/tests/with-cypressio/run.sh](./tests/with-cypressio/run.sh) |
-|Nightwatch    |  `npm test:nw` | [/tests/with-nightwatch/run.sh](./tests/with-nightwatch/run.sh) |
-|Playwright    |  `npm test:pw` | [/tests/with-playwright/run.sh](./tests/with-cypressplaywrightio/run.sh) |
-|Selenium+Jest |  `npm test:se` | [/tests/with-selenium-jest/run.sh](./tests/with-selenium-jest/run.sh) |
+| tool          | command       | detailed script                                                         |
+| ------------- | ------------- | ----------------------------------------------------------------------- |
+| Cypress       | `npm test:cy` | [tests/with-cypressio/run.sh](./tests/with-cypressio/run.sh)            |
+| Nightwatch    | `npm test:nw` | [tests/with-nightwatch/run.sh](./tests/with-nightwatch/run.sh)          |
+| Playwright    | `npm test:pw` | [tests/with-playwright/run.sh](./tests/with-cypressplaywrightio/run.sh) |
+| Selenium+Jest | `npm test:se` | [tests/with-selenium-jest/run.sh](./tests/with-selenium-jest/run.sh)    |
 
 ## Is this an article?
 
