@@ -27,45 +27,71 @@ We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-inter
 
 Example of shorter test file with only 1 test.
 
+Like this: 
+
+```javascript
+it(`shortest possible example [T_00]`, () => {
+  expect(1 + 1).to.equal(2);
+});
+```
+
 ### the "_**Arithmetic operations `[S_0]`**_" tests suite
 
 A simple suite of 2 tests, without any interaction with a webapp.
 
+Like this: 
+
+```javascript
+describe('Arithmetic operations [S_0]', () => {
+  it(`Simple addition [T_01]`, () => {
+    expect(2 + 2).to.equal(4);
+  });
+
+  it(`Simple multiplication [T_02]`, () => {
+    expect(2 * 2).to.equal(4);
+  });
+})
+```
+
 ### the "_**The-Internet, login form `[S_1]`**_" tests suite
 
-Tests in this suite use the [login form](https://the-internet.herokuapp.com/login) of  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-internet.herokuapp.com)
+Tests in this suite use the [login form](https://the-internet.herokuapp.com/login) of "**the-internet**" page: https://the-internet.herokuapp.com/login
+
+Simple actions/verifications:
+- click on buttons
+- fill input with  text
+- check presence of elements, and their text 
 
 ### the "_**The-Internet, WYSIWYG text editor `[S_2]`**_" tests suite
 
-Tests in this suite use the [WYSIWYG text editor](https://the-internet.herokuapp.com/tinymce) of  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-internet.herokuapp.com)
+Tests in this suite use the [WYSIWYG text editor](https://the-internet.herokuapp.com/tinymce) of  "**the-internet**" page: https://the-internet.herokuapp.com/tinymce
 
-The text editor is inside an iFrame. Loading of some elements is not immediate (initial text in texrt area).
-
-Some tests in this suite play with combinations and sequences of keyboard strokes:
-- `CTRL+A` to select all text, 
-- `END` in order to navigate to end of written text,
-- `CTRL+SHIFT+UP` to extend selection to the beginning of current paragraph,
-- `DELETE` to delete text
+Interesting notes: 
+- The text editor is inside an *iFrame*.
+- *Loading* of some elements is sometime *slow* (initial text in texrt area).
+- Some tests in this suite play with combinations and sequences of keyboard strokes:
+  - `CTRL+A` to select all text, 
+  - `END` in order to navigate to end of written text,
+  - `CTRL+SHIFT+UP` to extend selection to the beginning of current paragraph,
+  - `DELETE` to delete text
 
 
 ## Implemented tests
 
     
-| id     | ![Nw](../doc/nw-icon.png)                                    | ![Cypress](../doc/cy-icon.png)                              | ![Pw](../doc/pw-icon.png)                                    | ![Se+Je](../doc/se-js-icon.png)                                 |
-| ------ | ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
-| `T_00` | [✔️](./with-nightwatch/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-cypressio/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-playwright/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-selenium-jest/tests/simple/simpleSingleTest.spec.ts) |
-| `T_01` | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |
-| `T_02` | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |
-| `T_10` | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
-| `T_11` | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
-| `T_12` | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
-| `T_20` | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
-| `T_21` | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
-| `T_22` | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [🚨](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
+| test id | ![Nw](../doc/nw-icon.png)                                    | ![Cypress](../doc/cy-icon.png)                              | ![Pw](../doc/pw-icon.png)                                    | ![Se+Je](../doc/se-js-icon.png)                                 |
+| ------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
+| `T_00`  | [✔️](./with-nightwatch/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-cypressio/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-playwright/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-selenium-jest/tests/simple/simpleSingleTest.spec.ts) |
+| `T_01`  | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |
+| `T_02`  | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |
+| `T_10`  | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
+| `T_11`  | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
+| `T_12`  | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
+| `T_20`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
+| `T_21`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
+| `T_22`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [🚨](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
 
-<details>
-<summary>legend: </summary>
-*legend:*
+#### *legend:*
 
 |                                 |                                     |
 | ------------------------------- | ----------------------------------- |
@@ -75,4 +101,3 @@ Some tests in this suite play with combinations and sequences of keyboard stroke
 | ![Se+Je](../doc/se-js-icon.png) | implementation with Selenium + Jest |
 | ✔️                               | implemented, and pass               |
 | 🚨                               | implemented, but fails              |
-</details>
