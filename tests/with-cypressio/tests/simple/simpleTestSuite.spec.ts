@@ -1,4 +1,4 @@
-describe(`S_1: Suite of tests with Cypress`, () => {
+describe('Arithmetic operations [S_0]', () => {
   it(`Simple addition [T_01]`, () => {
     expect(2 + 2).to.equal(4);
   });

@@ -2,7 +2,7 @@ import { Builder, By, WebDriver } from 'selenium-webdriver';
 import { Options } from 'selenium-webdriver/chrome'
 import { describe, expect, test, beforeAll, afterAll, beforeEach } from '@jest/globals';
 
-describe('The-Internet', () => {
+describe('The-Internet, login form [S_1]', () => {
     let driver: WebDriver;
 
     beforeAll(async () => {

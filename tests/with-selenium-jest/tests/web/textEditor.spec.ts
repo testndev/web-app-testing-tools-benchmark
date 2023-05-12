@@ -10,7 +10,7 @@ const textMiddleParagraph = 'This is a paragraph in the middle of the text.';
 const textLastParagraph = 'This is the last paragraph. Good bye!';
 const newText = [textFirstParagraph, textMiddleParagraph, textLastParagraph].join('\n');
 
-describe('The-Internet WYSIWYG editor', () => {
+describe('The-Internet, WYSIWYG text editor [S_2]', () => {
 
     let driver: WebDriver;
 

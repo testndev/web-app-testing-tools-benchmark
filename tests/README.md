@@ -2,92 +2,63 @@
 
 We use  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-internet.herokuapp.com) as target web application.
 
-<table>
-    <tr>
-        <td align="center" colspan="3"></td>
-        <td align="center" colspan="4"
-   style="background-color: #eeeeee">location</td>
-    </tr>
-    <tr>
-        <th>id</th>
-        <th>title</th>
-        <th>comment</th>
-        <th><img src="../doc/nw-icon.png" alt="Nightwatch logo" title="implementation with Nightwatch" /></th>
-        <th><img src="../doc/cy-icon.png" alt="Cypress logo" title="implementation with Cypress" /></th>
-        <th><img src="../doc/pw-icon.png" alt="Playwright logo" title="implementation with Playwright" /></th>
-        <th><img src="../doc/se-js-icon.png" alt="Selenium + Jest logos" title="implementation with Selenium + Jest" /></th>
-    </tr>
-    <tr>
-        <td><code>T_00</code></td>
-        <td><em>shorter example ever</em></td>
-        <td>shorter test file with only 1 test</td>
-        <td><a href="./with-nightwatch/tests/simple/simpleSingleTest.spec.ts" >✔️</a></td>
-        <td><a href="./with-cypressio/tests/simple/simpleSingleTest.spec.ts" >✔️</a></td>
-        <td><a href="./with-playwright/tests/simple/simpleSingleTest.spec.ts" >✔️</a></td>
-        <td><a href="./with-selenium-jest/tests/simple/simpleSingleTest.spec.ts" >✔️</a></td>
-    </tr>
-    <tr>
-        <td><code>T_01</code></td>
-        <td><em>Simple addition</em></td>
-        <td rowspan="2">simple tests inside a named test-suite</td>
-        <td rowspan="2"><a href="./with-nightwatch/tests/simple/simpleTestSuite.spec.ts" >✔️</a></td>
-        <td rowspan="2"><a href="./with-cypressio/tests/simple/simpleTestSuite.spec.ts" >✔️</a></td>
-        <td rowspan="2"><a href="./with-playwright/tests/simple/simpleTestSuite.spec.ts" >✔️</a></td>
-        <td rowspan="2"><a href="./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts" >✔️</a></td>
-    </tr>
-    <tr>
-        <td><code>T_02</code></td>
-        <td><em>Simple multiplication</em></td>
-    </tr>
-    <tr>
-        <td><code>T_10</code></td>
-        <td><em>should accept user with valid credentials</em></td>
-        <td rowspan=3>use <a href="https://the-internet.herokuapp.com/login"><strong>login</strong> form</a</td>
-        <td rowspan=3><a href="./with-nightwatch/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
-        <td rowspan=3><a href="./with-cypressio/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
-        <td rowspan=3><a href="./with-playwright/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
-        <td rowspan=3><a href="./with-selenium-jest/tests/web/simpleFormLogin.spec.ts" >✔️</a></td>
-    </tr>
-    <tr>
-        <td><code>T_11</code></td>
-        <td><em>should display error message for incorrect username</em></td>
-    </tr>
-    <tr>
-        <td><code>T_12</code></td>
-        <td><em>should display error message for incorrect password</em></td>
-    </tr>
-    <tr>
-        <td><code>T_20</code></td>
-        <td><em>should have an initial text</em></td>
-        <td rowspan=3>
-            <p>
-              use <a href="https://the-internet.herokuapp.com/tinymce">WYSIWYG text editor</a>
-            </p>
-            <ol>
-                <li>check presence of the iFrame</li>
-                <li>+ <code>CTRL+A</code> combo</li>
-                <li>+ <code>CTRL+SHIFT+UP</code> combo</li>
-            </ol>
-        </td>
-        <td rowspan=3>
-           all <a href="./with-nightwatch/tests/web/textEditor.spec.ts" >✔️</a>
-        </td>
-        <td rowspan=3>
-            <a href="./with-cypressio/tests/web/textEditor.spec.ts" >✔️✔️❌</a> 
-        </td>
-        <td rowspan=3>
-            all <a href="./with-playwright/tests/web/textEditor.spec.ts" >✔️</a>
-        </td>
-        <td rowspan=3>
-            all <a href="./with-selenium-jest/tests/web/textEditor.spec.ts" >✔️</a>
-        </td>
-    </tr>
-    <tr>
-        <td><code>T_21</code></td>
-        <td><em>should be able to replace initial text by new one</em></td>
-    </tr>
-    <tr>
-        <td><code>T_22</code></td>
-        <td><em>should be able to delete last paragraph with keyboard shortcuts</em></td>
-    </tr>
-</table>
+
+## The tests
+
+- in `tests\simple\simpleSingleTest.spec.ts` file:
+  - "**shortest possible example `[T_00]`**" test
+- in `tests\simple\simpleTestSuite.spec.ts` file:
+  - inside "_**Arithmetic operations `[S_0]`**_" tests suite:
+    - "**Simple addition `[T_01]`**" test
+    - "**Simple multiplication `[T_02]`**" test
+- in `tests\web\simpleFormLogin.spec.ts` file:
+  - inside "_**The-Internet, login form `[S_1]`**_" tests suite:
+    - "**should accept user with valid credentials `[T_10]`**" test
+    - "**should display error message for incorrect username `[T_11]`**" test
+    - "**should display error message for incorrect password `[T_12]`**" test
+- in `tests\web\textEditor.spec.ts` file:
+  - inside "_**The-Internet, WYSIWYG text editor `[S_2]`**_" tests suite:
+    - "**should have an initial text `[T_20]`**" test
+    - "**should be able to replace initial text by new one `[T_21]`**" test
+    - "**should be able to delete last paragraph with keyboard shortcuts `[T_22]`**" test
+
+
+### the "**shortest possible example `[T_00]`**" test
+
+Example of shorter test file with only 1 test.
+
+### the "_**Arithmetic operations `[S_0]`**_" tests suite
+
+A simple suite of 2 tests, without any interaction with a webapp.
+
+### the "_**The-Internet, login form `[S_1]`**_" tests suite
+
+Tests in this suite use the [login form](https://the-internet.herokuapp.com/login) of  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-internet.herokuapp.com)
+
+### the "_**The-Internet, WYSIWYG text editor `[S_2]`**_" tests suite
+
+Tests in this suite use the [WYSIWYG text editor](https://the-internet.herokuapp.com/tinymce) of  ["**the-internet**" page (the-internet.herokuapp.com)](https://the-internet.herokuapp.com)
+
+The text editor is inside an iFrame. Loading of some elements is not immediate (initial text in texrt area).
+
+Some tests in this suite play with combinations and sequences of keyboard strokes:
+- `CTRL+A` to select all text, 
+- `END` in order to navigate to end of written text,
+- `CTRL+SHIFT+UP` to extend selection to the beginning of current paragraph,
+- `DELETE` to delete text
+
+
+
+    
+| id     | title                                                             | ![implementation with Nightwatch](../doc/nw-icon.png) | ![implementation with Cypress](../doc/cy-icon.png) | ![implementation with Playwright](../doc/pw-icon.png) | ![implementation with Selenium + Jest](../doc/se-js-icon.png)                         |
+| ------ | ----------------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- | ------------------------------------ | ------------------------------------ |
+| `T_00` | _shortest possible example_                                            | [✔️](simple/simpleSingleTest.spec.ts)                  | [✔️](simple/simpleSingleTest.spec.ts)               | [✔️](simple/simpleSingleTest.spec.ts) | [✔️](simple/simpleSingleTest.spec.ts) |
+| `T_01` | _Simple addition_                                                 | [✔️](simple/simpleTestSuite.spec.ts)                   | [✔️](simple/simpleTestSuite.spec.ts)                | [✔️](simple/simpleTestSuite.spec.ts)  | [✔️](simple/simpleTestSuite.spec.ts)  |
+| `T_02` | _Simple multiplication_                                           | [✔️](simple/simpleTestSuite.spec.ts)                   | [✔️](simple/simpleTestSuite.spec.ts)                | [✔️](simple/simpleTestSuite.spec.ts)  | [✔️](simple/simpleTestSuite.spec.ts)  |
+| `T_10` | _should accept user with valid credentials_                       | [✔️](web/simpleFormLogin.spec.ts)                      | [✔️](web/simpleFormLogin.spec.ts)                   | [✔️](web/simpleFormLogin.spec.ts)     | [✔️](web/simpleFormLogin.spec.ts)     |
+| `T_11` | _should display error message for incorrect username_             | [✔️](web/simpleFormLogin.spec.ts)                      | [✔️](web/simpleFormLogin.spec.ts)                   | [✔️](web/simpleFormLogin.spec.ts)     | [✔️](web/simpleFormLogin.spec.ts)     |
+| `T_12` | _should display error message for incorrect password_             | [✔️](web/simpleFormLogin.spec.ts)                      | [✔️](web/simpleFormLogin.spec.ts)                   | [✔️](web/simpleFormLogin.spec.ts)     | [✔️](web/simpleFormLogin.spec.ts)     |
+| `T_20` | _should have an initial text_                                     | [✔️](web/textEditor.spec.ts)                           | [✔️](web/textEditor.spec.ts)                        | [✔️](web/textEditor.spec.ts)          | [✔️](web/textEditor.spec.ts)          |
+| `T_21` | _should be able to replace initial text by new one_               | [✔️](web/textEditor.spec.ts)                           | [✔️](web/textEditor.spec.ts)                        | [✔️](web/textEditor.spec.ts)          | [✔️](web/textEditor.spec.ts)          |
+| `T_22` | _should be able to delete last paragraph with keyboard shortcuts_ | [✔️](web/textEditor.spec.ts)                           | [❌](web/textEditor.spec.ts)                        | [✔️](web/textEditor.spec.ts)          | [✔️](web/textEditor.spec.ts)          |
+

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('The-Internet login form', () => {
+test.describe('The-Internet, login form [S_1]', () => {
 
     test.beforeEach(async ({ page }) => {
         await page.goto('/login');

@@ -1,4 +1,4 @@
-describe('The-Internet login form', () => {
+describe('The-Internet, login form [S_1]', () => {
 
     beforeEach(() => {
         cy.visit('/login');

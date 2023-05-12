@@ -1,4 +1,4 @@
-describe('The-Internet login form', function () {
+describe('The-Internet, login form [S_1]', function () {
 
     beforeEach(browser => {
         browser

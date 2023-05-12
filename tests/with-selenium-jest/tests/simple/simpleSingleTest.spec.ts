@@ -1,5 +1,5 @@
 import { expect, test} from '@jest/globals';
 
-test(`T_00: shorter example ever`, () => {
+test(`shortest possible example [T_00]`, () => {
   expect(1 + 1).toBe(2);
 });

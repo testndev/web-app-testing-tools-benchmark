@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 
-describe(`S_1: Suite of tests with Jest`, () => {
+describe('Arithmetic operations [S_0]', () => {
   test(`Simple addition [T_01]`, () => {
     expect(2 + 2).toBe(4);
   });

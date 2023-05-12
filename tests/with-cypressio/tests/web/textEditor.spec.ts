@@ -9,7 +9,7 @@ const newText = [textFirstParagraph, textMiddleParagraph, textLastParagraph].joi
 
 const littlePause = 2000;
 
-describe('The-Internet WYSIWYG editor', () => {
+describe('The-Internet, WYSIWYG text editor [S_2]', () => {
 
     beforeEach(() => {
         cy.visit('/tinymce');

@@ -8,7 +8,7 @@ const textMiddleParagraph = 'This is a paragraph in the middle of the text.';
 const textLastParagraph = 'This is the last paragraph. Good bye!';
 const newText = [textFirstParagraph, textMiddleParagraph, textLastParagraph].join('\n');
 
-test.describe('The-Internet WYSIWYG editor', async () => {
+test.describe('The-Internet, WYSIWYG text editor [S_2]', async () => {
 
     test.beforeEach(async ({ page }) => {
         await page.goto('/tinymce');
