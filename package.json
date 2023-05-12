@@ -15,12 +15,16 @@
     "test:cy": "cd tests/with-cypressio && npm test",
     "test:se": "cd tests/with-selenium-jest && npm test",
     "test:nw": "cd tests/with-nightwatch && npm test",
-    
     "init": "npm install && npm run init:cy && npm run init:pw && npm run init:se && npm run init:nw",
     "init:pw": "cd tests/with-playwright && npm install",
     "init:cy": "cd tests/with-cypressio && npm install",
     "init:se": "cd tests/with-selenium-jest && npm install",
-    "init:nw": "cd tests/with-nightwatch && npm install"
+    "init:nw": "cd tests/with-nightwatch && npm install",
+    "lint": "npm run lint:cy && npm run lint:pw && npm run lint:se && npm run lint:nw",
+    "lint:pw": "cd tests/with-playwright && npm run lint",
+    "lint:cy": "cd tests/with-cypressio && npm run lint",
+    "lint:se": "cd tests/with-selenium-jest && npm run lint",
+    "lint:nw": "cd tests/with-nightwatch && npm run lint"
   },
   "keywords": [
     "testing",
@@ -32,7 +36,7 @@
   },
   "license": "GPL-3.0-or-later",
   "private": false,
-  "devDependencies": { 
+  "devDependencies": {
     "@types/node": "^18.16.1",
     "@typescript-eslint/eslint-plugin": "5.59.1",
     "@typescript-eslint/parser": "^5.59.1",
