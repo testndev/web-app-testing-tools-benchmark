@@ -1,0 +1,8 @@
+# comment
+*/temp*
+*tmp*
+*/*/temp*
+temp?
+doc
+node_modules
+**/node_modules

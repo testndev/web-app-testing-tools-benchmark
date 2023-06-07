@@ -1,6 +1,6 @@
 {
   "name": "testndev-web-app-testing-tools-benchmark-cypress",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Benchmark of web-applications testing tools/libraries/frameworks: example with Cypress",
   "repository": {
     "type": "git",

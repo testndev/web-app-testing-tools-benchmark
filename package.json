@@ -1,6 +1,6 @@
 {
   "name": "testndev-web-app-testing-tools-benchmark",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Benchmark of web-applications testing tools/libraries/frameworks",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "test:se": "cd tests/with-selenium-jest && npm test",
     "test:nw": "cd tests/with-nightwatch && npm test",
     "init": "npm install && npm run init:cy && npm run init:pw && npm run init:se && npm run init:nw",
-    "init:pw": "cd tests/with-playwright && npm install",
+    "init:pw": "cd tests/with-playwright && npm install && npx playwright install chrome",
     "init:cy": "cd tests/with-cypressio && npm install",
     "init:se": "cd tests/with-selenium-jest && npm install",
     "init:nw": "cd tests/with-nightwatch && npm install",
@@ -24,7 +24,8 @@
     "lint:pw": "cd tests/with-playwright && npm run lint",
     "lint:cy": "cd tests/with-cypressio && npm run lint",
     "lint:se": "cd tests/with-selenium-jest && npm run lint",
-    "lint:nw": "cd tests/with-nightwatch && npm run lint"
+    "lint:nw": "cd tests/with-nightwatch && npm run lint",
+    "report:pw": "cd tests/with-playwright && npm run report"
   },
   "keywords": [
     "testing",
