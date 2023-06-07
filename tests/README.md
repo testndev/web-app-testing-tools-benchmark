@@ -100,7 +100,7 @@ According to [dataset (`listOfLinks.ts`)](./listOfLinks.ts), user clicks on a li
 | `T_20`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
 | `T_21`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
 | `T_22`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [🚨](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
-| `T_3xx` | [⚪](./with-nightwatch/tests/web/navigateOnManyPages.spec.ts) | [⚪](./with-cypressio/tests/web/navigateOnManyPages.spec.ts) | [✔️](./with-playwright/tests/web/navigateOnManyPages.spec.ts) | [⚪](./with-selenium-jest/tests/web/navigateOnManyPages.spec.ts) |
+| `T_3xx` | [🚧](./with-nightwatch/tests/web/navigateOnManyPages.spec.ts) | [🚧](./with-cypressio/tests/web/navigateOnManyPages.spec.ts) | [✔️](./with-playwright/tests/web/navigateOnManyPages.spec.ts) | [⚪](./with-selenium-jest/tests/web/navigateOnManyPages.spec.ts) |
 #### *legend:*
 
 |                                 |                                     |
@@ -111,4 +111,5 @@ According to [dataset (`listOfLinks.ts`)](./listOfLinks.ts), user clicks on a li
 | ![Se+Je](../doc/se-js-icon.png) | implementation with Selenium + Jest |
 | ⚪                               | not yet implemented                 |
 | ✔️                               | implemented, and pass               |
+| 🚧                               | implementation in progress              |
 | 🚨                               | implemented, but fails              |

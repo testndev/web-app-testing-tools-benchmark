@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "baseUrl": "https://the-internet.herokuapp.com/",
-        "target": "es5",
+        "target": "ES2016",
         "lib": [
             "es5",
             "dom"
