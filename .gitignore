@@ -4,7 +4,8 @@ package-lock.json
 
 # tests results/reports
 
-results/*.csv
+**/results/*
+!results/README.md
 *test-report*
 *tests_output*
 **/*.mp4
@@ -12,10 +13,8 @@ results/*.csv
 # Logs
 logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
+*-debug.log*
+*-error.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
