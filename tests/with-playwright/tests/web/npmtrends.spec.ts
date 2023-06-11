@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import * as fs from 'fs';
 
-const toolsList = ['cypress', 'nightwatch', 'playwright', 'selenium-webdriver'];
+const toolsList = ['@playwright/test', 'cypress', 'nightwatch', 'selenium-webdriver'];
 
 const url = `https://www.npmtrends.com/${toolsList.join('-vs-')}`;
 
@@ -13,14 +13,14 @@ const periodsTitles = {
 }
 
 const periodsList = Object.keys(periodsTitles);
-
-const screenshotPath = (period) => `./results/screenshots/NPM-trends ${toolsList.join('.')} - ${period}.png`;
+const screenshotDir = './results/img/300/';
+const screenshotPath = (period) => screenshotDir + `NPMtrends-${toolsList.join('.')}-${period}.png`.replace(/\s/g, '_').replace(/[@\/]/g, '');
 
 test('get NPM trends of those tools from npmtrends.com', async ({ page }) => {
     let markdown = `# NPM trends - ${toolsList.join('/')}\n\n`;
     markdown += `From [npm trends](${url})\n\n`;
     const waitForResponses = toolsList.map(tool => page.waitForResponse(RegExp('.*' + tool + '.*')));
-    
+
     await page.goto(url);
     await expect(page).toHaveTitle(/.*NPM Trends.*/i);
     for (const period of periodsList) {
