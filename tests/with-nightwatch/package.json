@@ -25,10 +25,10 @@
   "license": "GPL-3.0-or-later",
   "private": false,
   "devDependencies": {
-    "@types/nightwatch": "^2.3.23",
-    "chromedriver": "^112.0.0",
-    "nightwatch": "^2.6.20",
+    "@types/nightwatch": "^2.3.30",
+    "chromedriver": "^119.0.1",
+    "nightwatch": "^3.3.2",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.3.2"
   }
 }
