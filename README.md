@@ -2,7 +2,7 @@
 
 ![](doc/header-image.png)
 
-Here we compare [Cypress.io](https://cypress.io/) *vs* [Nightwatch.js](https://nightwatchjs.org) *vs* [Playwright](https://playwright.dev/) *vs* [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/), all in their [Node.js](https://nodejs.org) versions.
+Here we compare [Cypress.io](https://cypress.io/) *vs* [Nightwatch.js](https://nightwatchjs.org) *vs* [Playwright](https://playwright.dev/) *vs* [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/) *vs* [WebdriverIO](https://github.com/webdriverio/webdriverio), all in their [Node.js](https://nodejs.org) versions.
 
 We present in this repo some concrete examples of automated tests implemented in differents tools.
 
@@ -41,6 +41,7 @@ for ((n=0;n<5;n++)); do npm test; done
 | Nightwatch    | `npm test:nw` | [tests/with-nightwatch/run.sh](./tests/with-nightwatch/run.sh)          |
 | Playwright    | `npm test:pw` | [tests/with-playwright/run.sh](./tests/with-cypressplaywrightio/run.sh) |
 | Selenium+Jest | `npm test:se` | [tests/with-selenium-jest/run.sh](./tests/with-selenium-jest/run.sh)    |
+| WebdriverIO   | `npm test:wi` | [tests/with-webdriverio/run.sh](./tests/with-webdriverio/run.sh)        |
 
 ## Is this an article?
 

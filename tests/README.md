@@ -89,18 +89,18 @@ According to [dataset (`listOfLinks.ts`)](./listOfLinks.ts), user clicks on a li
 ## Implemented tests
 
     
-| test id | ![Nw](../doc/nw-icon.png)                                    | ![Cypress](../doc/cy-icon.png)                              | ![Pw](../doc/pw-icon.png)                                    | ![Se+Je](../doc/se-js-icon.png)                                 |
-| ------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
-| `T_00`  | [✔️](./with-nightwatch/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-cypressio/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-playwright/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-selenium-jest/tests/simple/simpleSingleTest.spec.ts) |
-| `T_01`  | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |
-| `T_02`  | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |
-| `T_10`  | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
-| `T_11`  | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
-| `T_12`  | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |
-| `T_20`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
-| `T_21`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
-| `T_22`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [🚨](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |
-| `T_3xx` | [🚧](./with-nightwatch/tests/web/navigateOnManyPages.spec.ts) | [🚧](./with-cypressio/tests/web/navigateOnManyPages.spec.ts) | [✔️](./with-playwright/tests/web/navigateOnManyPages.spec.ts) | [⚪](./with-selenium-jest/tests/web/navigateOnManyPages.spec.ts) |
+| test id | ![Nw](../doc/nw-icon.png)                                    | ![Cypress](../doc/cy-icon.png)                              | ![Pw](../doc/pw-icon.png)                                    | ![Se+Je](../doc/se-js-icon.png)                                 | ![Wdio](../doc/wdio-icon.png)      |
+| ------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------- |-------- |
+| `T_00`  | [✔️](./with-nightwatch/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-cypressio/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-playwright/tests/simple/simpleSingleTest.spec.ts) | [✔️](./with-selenium-jest/tests/simple/simpleSingleTest.spec.ts) |  ⚪ |
+| `T_01`  | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |  ⚪ |
+| `T_02`  | [✔️](./with-nightwatch/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-cypressio/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-playwright/tests/simple/simpleTestSuite.spec.ts)  | [✔️](./with-selenium-jest/tests/simple/simpleTestSuite.spec.ts)  |  ⚪ |
+| `T_10`  | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |  ⚪ |
+| `T_11`  | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |  ⚪ |
+| `T_12`  | [✔️](./with-nightwatch/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-cypressio/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-playwright/tests/web/simpleFormLogin.spec.ts)     | [✔️](./with-selenium-jest/tests/web/simpleFormLogin.spec.ts)     |  ⚪ |
+| `T_20`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |  ⚪ |
+| `T_21`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [✔️](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |  ⚪ |
+| `T_22`  | [✔️](./with-nightwatch/tests/web/textEditor.spec.ts)          | [🚨](./with-cypressio/tests/web/textEditor.spec.ts)          | [✔️](./with-playwright/tests/web/textEditor.spec.ts)          | [✔️](./with-selenium-jest/tests/web/textEditor.spec.ts)          |  ⚪ |
+| `T_3xx` | [🚧](./with-nightwatch/tests/web/navigateOnManyPages.spec.ts) | [🚧](./with-cypressio/tests/web/navigateOnManyPages.spec.ts) | [✔️](./with-playwright/tests/web/navigateOnManyPages.spec.ts) | [⚪](./with-selenium-jest/tests/web/navigateOnManyPages.spec.ts) |  ⚪ |
 #### *legend:*
 
 |                                 |                                     |
@@ -109,7 +109,8 @@ According to [dataset (`listOfLinks.ts`)](./listOfLinks.ts), user clicks on a li
 | ![Cy](../doc/cy-icon.png)       | implementation with Cypress         |
 | ![Pw](../doc/pw-icon.png)       | implementation with Playwright      |
 | ![Se+Je](../doc/se-js-icon.png) | implementation with Selenium + Jest |
+| ![Wdio](../doc/wdio-icon.png)   | implementation with WebdriverIO     |
 | ⚪                               | not yet implemented                 |
 | ✔️                               | implemented, and pass               |
-| 🚧                               | implementation in progress              |
+| 🚧                               | implementation in progress          |
 | 🚨                               | implemented, but fails              |
