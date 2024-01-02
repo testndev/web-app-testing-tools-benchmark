@@ -24,11 +24,11 @@
   "license": "GPL-3.0-or-later",
   "private": false,
   "devDependencies": {
-    "@wdio/cli": "^8.24.1",
-    "@wdio/local-runner": "^8.24.1",
-    "@wdio/mocha-framework": "^8.24.0",
-    "@wdio/spec-reporter": "^8.24.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.3.2"
+    "@wdio/cli": "^8.27.1",
+    "@wdio/local-runner": "^8.27.0",
+    "@wdio/mocha-framework": "^8.27.0",
+    "@wdio/spec-reporter": "^8.27.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }

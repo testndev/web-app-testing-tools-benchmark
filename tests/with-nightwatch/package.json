@@ -26,9 +26,9 @@
   "private": false,
   "devDependencies": {
     "@types/nightwatch": "^2.3.30",
-    "chromedriver": "^119.0.1",
-    "nightwatch": "^3.3.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.3.2"
+    "chromedriver": "^120.0.1",
+    "nightwatch": "^3.3.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }
