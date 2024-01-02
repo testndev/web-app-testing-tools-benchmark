@@ -9,6 +9,7 @@ package-lock.json
 *test-report*
 *tests_output*
 **/*.mp4
+tests/with-cypressio/cypress
 
 # Logs
 logs
